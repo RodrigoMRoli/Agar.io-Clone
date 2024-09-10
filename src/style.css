@@ -1,0 +1,61 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    --canva-color: rgba(233, 232, 228, 0.87);
+    --debug-color: rgba(255, 0, 0, 0.27);
+
+    color-scheme: light dark;
+    color: rgba(218, 216, 206, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box; /* Include padding and borders in width/height */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #242424;
+}
+
+#gameCanvas {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 2px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--canva-color);
+}
+
+#debug {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+}
+
+#debug table {
+    width: 100%;
+    vertical-align: middle;
+    font-size: 12px;
+    background-color: var(--debug-color);
+    color: black;
+}
