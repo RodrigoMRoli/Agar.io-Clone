@@ -33,4 +33,6 @@ export const FOOD_OPACITY = "B3"; // 70% opacity
 export const FOOD_DENSITY = 0.4; // 40% of the world is covered in food
 export const FOOD_SPAWN_RATE = 1; // 1 food every 1 second
 
+export const INPUT_MAX_MOUSE_DISTANCE = 200;
+
 export const DEBUG = Boolean(import.meta.env.VITE_DEBUG);
